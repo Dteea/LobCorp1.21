@@ -1,5 +1,6 @@
 package com.dt.lobotomycorporation;
 
+import com.dt.lobotomycorporation.creativetab.ModTab;
 import com.dt.lobotomycorporation.item.ModItems;
 import org.slf4j.Logger;
 
@@ -56,6 +57,7 @@ public class LobotomyCorporation
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
         ModItems.register(modEventBus);
+        ModTab.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
