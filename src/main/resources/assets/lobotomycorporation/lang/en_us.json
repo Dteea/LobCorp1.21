@@ -1,17 +1,19 @@
 {
 
-  "item.lobotomycorporation.lcorp_logo" : "Lobotomy Corporation Logo",
-  "item.lobotomycorporation.zayin_logo" : "Zayin Logo",
-  "item.lobotomycorporation.teth_logo" : "Teth Logo",
-  "item.lobotomycorporation.he_logo" : "He Logo",
-  "item.lobotomycorporation.waw_logo" : "Waw Logo",
-  "item.lobotomycorporation.aleph_logo" : "Aleph Logo",
+  "item.lobotomycorporation.lcorp_logo" : "Lobotomy CorporationLogo",
+  "item.lobotomycorporation.zayin_logo" : "Zayin",
+  "item.lobotomycorporation.teth_logo" : "Teth",
+  "item.lobotomycorporation.he_logo" : "He",
+  "item.lobotomycorporation.waw_logo" : "Waw",
+  "item.lobotomycorporation.aleph_logo" : "Aleph",
 
   "item.lobotomycorporation.adoration" : "Adoration",
   "item.lobotomycorporation.heaven" : "Heaven",
   "item.lobotomycorporation.life_for_a_daredevil" : "Life For A Daredevil",
   "item.lobotomycorporation.penitence" : "Penitence",
   "item.lobotomycorporation.solemn_lament" : "Solemn Lament",
+
+  "block.lobotomycorporation.lab_block": "Lab Tile",
 
   "itemGroup.lobotomycorporation.all_items" : "Lobotomy Corporation"
 }

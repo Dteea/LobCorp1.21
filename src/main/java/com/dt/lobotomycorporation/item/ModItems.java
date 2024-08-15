@@ -1,6 +1,8 @@
 package com.dt.lobotomycorporation.item;
 
 import com.dt.lobotomycorporation.LobotomyCorporation;
+import com.jcraft.jorbis.Block;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -8,6 +10,9 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(LobotomyCorporation.MODID);
+
+    // Blocks
+    public static final DeferredItem<BlockItem> LAB_BLOCK = ITEMS.registerSimpleBlockItem("lab_block", ModBlocks.LAB_BLOCK);
 
     // Weapons
     public static final DeferredItem<Item> ADORATION = ITEMS.register("adoration", () -> new Item(new Item.Properties()));

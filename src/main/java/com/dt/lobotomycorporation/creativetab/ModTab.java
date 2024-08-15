@@ -2,6 +2,7 @@ package com.dt.lobotomycorporation.creativetab;
 
 
 import com.dt.lobotomycorporation.LobotomyCorporation;
+import com.dt.lobotomycorporation.item.ModBlocks;
 import com.dt.lobotomycorporation.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -22,11 +23,12 @@ public class ModTab {
                     .title(Component.translatable("itemGroup.lobotomycorporation.all_items"))
                     .icon(() -> new ItemStack(ModItems.LCORP_LOGO.get()))
                     .displayItems((params, output) -> {
-                        output.accept(ModItems.ADORATION);
-                        output.accept(ModItems.LIFE_FOR_A_DAREDEVIL);
-                        output.accept(ModItems.SOLEMN_LAMENT);
-                        output.accept(ModItems.PENITENCE);
-                        output.accept(ModItems.HEAVEN);
+                        output.accept(ModItems.ADORATION.get());
+                        output.accept(ModItems.LIFE_FOR_A_DAREDEVIL.get());
+                        output.accept(ModItems.SOLEMN_LAMENT.get());
+                        output.accept(ModItems.PENITENCE.get());
+                        output.accept(ModItems.HEAVEN.get());
+                        output.accept(ModItems.LAB_BLOCK.get());
                     })
                     .build());
 
@@ -37,7 +39,7 @@ public class ModTab {
                     .icon(() -> new ItemStack(ModItems.ZAYIN.get()))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath("lobotomycorporation", "all_items"))
                     .displayItems((params, output) -> {
-                        output.accept(ModItems.ZAYIN);
+                        output.accept(ModItems.ZAYIN.get());
                     })
                     .build());
 
@@ -47,7 +49,7 @@ public class ModTab {
                     .icon(() -> new ItemStack(ModItems.TETH.get()))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath("lobotomycorporation", "all_items"))
                     .displayItems((params, output) -> {
-                        output.accept(ModItems.TETH);
+                        output.accept(ModItems.TETH.get());
                     })
                     .build());
 
@@ -57,7 +59,7 @@ public class ModTab {
                     .icon(() -> new ItemStack(ModItems.HE.get()))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath("lobotomycorporation", "all_items"))
                     .displayItems((params, output) -> {
-                        output.accept(ModItems.HE);
+                        output.accept(ModItems.HE.get());
                     })
                     .build());
 
@@ -67,7 +69,7 @@ public class ModTab {
                     .icon(() -> new ItemStack(ModItems.WAW.get()))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath("lobotomycorporation", "all_items"))
                     .displayItems((params, output) -> {
-                        output.accept(ModItems.WAW);
+                        output.accept(ModItems.WAW.get());
                     })
                     .build());
 
@@ -77,7 +79,7 @@ public class ModTab {
                     .icon(() -> new ItemStack(ModItems.ALEPH.get()))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath("lobotomycorporation", "all_items"))
                     .displayItems((params, output) -> {
-                        output.accept(ModItems.ALEPH);
+                        output.accept(ModItems.ALEPH.get());
                     })
                     .build());
 
