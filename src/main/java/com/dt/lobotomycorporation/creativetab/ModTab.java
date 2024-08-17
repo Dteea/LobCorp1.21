@@ -2,7 +2,6 @@ package com.dt.lobotomycorporation.creativetab;
 
 
 import com.dt.lobotomycorporation.LobotomyCorporation;
-import com.dt.lobotomycorporation.item.ModBlocks;
 import com.dt.lobotomycorporation.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -37,7 +36,7 @@ public class ModTab {
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("item.lobotomycorporation.zayin_logo"))
                     .icon(() -> new ItemStack(ModItems.ZAYIN.get()))
-                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath("lobotomycorporation", "all_items"))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(LobotomyCorporation.MODID, "all_items"))
                     .displayItems((params, output) -> {
                         output.accept(ModItems.ZAYIN.get());
                     })
@@ -47,7 +46,7 @@ public class ModTab {
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("item.lobotomycorporation.teth_logo"))
                     .icon(() -> new ItemStack(ModItems.TETH.get()))
-                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath("lobotomycorporation", "all_items"))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(LobotomyCorporation.MODID, "zayin"))
                     .displayItems((params, output) -> {
                         output.accept(ModItems.TETH.get());
                     })
@@ -57,7 +56,7 @@ public class ModTab {
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("item.lobotomycorporation.he_logo"))
                     .icon(() -> new ItemStack(ModItems.HE.get()))
-                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath("lobotomycorporation", "all_items"))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(LobotomyCorporation.MODID, "teth"))
                     .displayItems((params, output) -> {
                         output.accept(ModItems.HE.get());
                     })
@@ -67,7 +66,7 @@ public class ModTab {
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("item.lobotomycorporation.waw_logo"))
                     .icon(() -> new ItemStack(ModItems.WAW.get()))
-                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath("lobotomycorporation", "all_items"))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(LobotomyCorporation.MODID, "he"))
                     .displayItems((params, output) -> {
                         output.accept(ModItems.WAW.get());
                     })
@@ -77,7 +76,7 @@ public class ModTab {
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("item.lobotomycorporation.aleph_logo"))
                     .icon(() -> new ItemStack(ModItems.ALEPH.get()))
-                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath("lobotomycorporation", "all_items"))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(LobotomyCorporation.MODID, "waw"))
                     .displayItems((params, output) -> {
                         output.accept(ModItems.ALEPH.get());
                     })

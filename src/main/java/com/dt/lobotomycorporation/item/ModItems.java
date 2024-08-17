@@ -1,7 +1,6 @@
 package com.dt.lobotomycorporation.item;
 
 import com.dt.lobotomycorporation.LobotomyCorporation;
-import com.jcraft.jorbis.Block;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
@@ -21,7 +20,7 @@ public class ModItems {
     public static final DeferredItem<Item> PENITENCE = ITEMS.register("penitence", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> SOLEMN_LAMENT = ITEMS.register("solemn_lament", () -> new Item(new Item.Properties()));
 
-    // Mod Icons
+    // Icons
     public static final DeferredItem<Item> LCORP_LOGO = ITEMS.register("lcorp_logo", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ZAYIN = ITEMS.register("zayin_logo", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> TETH = ITEMS.register("teth_logo", () -> new Item(new Item.Properties()));
